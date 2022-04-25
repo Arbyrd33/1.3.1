@@ -1,4 +1,6 @@
-/*======= Create a new universal selector that changes the font color to: #3C373B */
+*{ 
+  box-sizing: border-box;
+}
 html {
   color: #3c373b;
   width: 650px;
