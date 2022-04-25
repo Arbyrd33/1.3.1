@@ -3,6 +3,8 @@ html {
   color: #3c373b;
   width: 650px;
   margin: 0 auto;
+  /* background-image: url(""); */
+  /* filter: blur(5px); */
 }
 
 h1 {
