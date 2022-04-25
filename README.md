@@ -33,7 +33,7 @@ x5. cd into your repository on the command line and use `code .` to open VS Code
 x6. Open the terminal in VSC and type `npm install`. While this runs, click the split terminal icon.
 x7. Next type `npm run test` in one side, and use the other side for git commands or general use.
 x8. Download the Live Server extension from the Extensions tab on the left side of your VS Code. After it is done installing, click "Go Live" on the bottom right side of your screen to run your HTML file.
-9. Complete your work making regular commits to the main branch; your CodeGrade score will update each time you make a push.
+x9. Complete your work making regular commits to the main branch; your CodeGrade score will update each time you make a push.
 
 
 ## Minimum Viable Product
@@ -45,7 +45,7 @@ Your finished project must include all of the following requirements:
 [Review the provided design file for the menu page](design-files/Unit1-Sprint3-Module1.png).
 
 * [ x ] Create the HTML structure using semantic tags
-* [ ] Fill in the blanks in the CSS
+* [ x ] Fill in the blanks in the CSS
 
 ### Stretch Tasks
 
