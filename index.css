@@ -1,31 +1,92 @@
-*{ 
+* {
   box-sizing: border-box;
 }
+
 html {
   color: #3c373b;
   width: 650px;
   margin: 0 auto;
-  background-image: url("https://media.istockphoto.com/vectors/vector-blue-cakes-and-pastry-seamless-background-repeat-pattern-with-vector-id1194539021?k=20&m=1194539021&s=170667a&w=0&h=VEXZ90O4N779u787rqWfKUYUsZFL2469nDPTisUev4Q=");
+  background-image: url("https://media.istockphoto.com/vectors/seamless-vector-bakery-pastry-pattern-vector-id880710798?k=20&m=880710798&s=612x612&w=0&h=9T08hDrfr0AjDPqRZt-fK0kgqSdKxtYE7F2vESsxAxc=");
+  background-size: 100%;
 }
 
 h1 {
-  font-family: 'Gaegu', cursive;
+  font-family: "Gaegu", cursive;
   margin: 20px 0;
-  /*=======  Update the font size to 60px and center the text */
   font-size: 60px;
   text-align: center;
+  color: #e9d0c4;
 }
 
-h2, h3, h4, h5, h6 {
-  font-family: 'Gaegu', cursive;
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Gaegu", cursive;
   margin-bottom: 0;
   padding: 0 10px;
   /*=======  Update the font size to 30px */
   font-size: 30px;
 }
 
-/*======= Create a selector for ALL p tags in the site to have the following styles*/
+section {
+  background: transparent;
+  border-radius: 40px;
+  backdrop-filter: blur(5px);
+}
 
+section.home {
+  background: #ead0c4;
+  border-left: 1px solid #BC9266;
+  border-right: 1px solid #BC9266;
+}
+section header {
+  background: none;
+}
+section header h1 {
+  background-color: #aa8a70;
+  border-radius: 25px;
+  border: 1px solid #e9d0c4;
+}
+
+section header img {
+  width: 100%;
+}
+
+section#about {
+  color: #FEF9E3;
+  text-align: center;
+  border-right: 10px solid #ab8a6f;
+}
+section#about p{
+  margin-bottom: 10%;
+  color: #2F120B;
+}
+section h2 {
+  border-radius: 20px 30px 0px 20px;
+  background-color: #ab8a6f;
+}
+section.home div#cookieflavor p {
+  border-right: 1px solid #aa8a70;
+}
+section.home h3, section.home div#celebrateblurb h2 {
+  color: #FEF9E3;
+  text-align: right;
+  border-radius: 30px 20px 20px 0px;
+  background-color: #aa8a70;
+}
+
+section.home div#cupcakeflavor p, section.home div#celebrateblurb p {
+
+  border-left: 1px solid #aa8a70;
+}
+
+section.home img {
+  position: relative;
+  margin-top: 20%;
+  border-radius: 10% 10% 10% 10%;
+}
 p {
   font-size: 16px;
   font-family: roboto;
@@ -58,34 +119,81 @@ img {
   width: 605px;
 }
 
+.container header nav {
+  padding-left: 2.5%;
+}
 .container header nav a {
-  margin: 0 10px;
-  border: 1px solid lightgray;
-  padding: 20px;
+  /* background: transparent url("https://img.icons8.com/carbon-copy/344/confectionery.png") center no-repeat; */
+  font-family: "Gaegu", cursive;
+  width:absolute;
+  line-height: 125px;
+  /* background-color: #FFECD2; */
+  margin: 2%;
+  /* border: 1px solid lightgray; */
+  padding-left: 5px;
+  padding-right:5px;
+  padding-top: 20px;
+  border-spacing: 50px;
   display: inline-block;
   border-radius: 20px;
-  color: white;
+  color: #2F120B;
   text-decoration: none;
-  margin-bottom: 20px;
-   /*======= create a background property. Set the value to #F87B99 */
-  background-color: #F87B99;
-  
+  text-align: left;
+  font-size: 23px;
+  font-style: bold;
+}
+.container header nav a:hover {
+  /*======= create a background property and set it to #E9D0C4.  Then create a color property and set it's value to pink. */
+  color: #AC8A6F;
+}
+.container header nav a.about{
+  background: transparent url("https://img.icons8.com/color/344/confectionery.png") no-repeat;
+  background-position-y: bottom 10px;
+  background-position-x: center;
+  background-size: 100%;
+  text-align: center;
+
 }
 
-.container header nav a:hover {
-/*======= create a background property and set it to white.  Then create a color property and set it's value to pink. */
-background-color: white;
-color: #F87B99;
+.container header nav a.cookies{
+  background: transparent url("https://img.icons8.com/color/344/cookies.png") no-repeat;
+  background-position-y: bottom 10px;
+  background-position-x: center;
+  background-size: 80%;
+  text-align: center;
+}
+
+.container header nav a.celebrations{
+  background: transparent url("https://img.icons8.com/color/344/cake.png") no-repeat;
+  background-position-y: bottom 10px;
+  background-position-x: center;
+  background-size: 50%;
+  text-align: center;
+}
+.container header nav a.catering{
+  background: transparent url("https://img.icons8.com/color/344/dessert.png") no-repeat;
+  background-position-y: bottom 10px;
+  background-position-x: center;
+  background-size: 70%;
+  text-align: center;
+}
+.container header nav a.contact{
+  background: transparent url("https://img.icons8.com/color/344/cinnamon-roll.png") no-repeat;
+  background-position-y: bottom 10px;
+  background-position-x: center;
+  background-size: 90%;
+  text-align: center;
+  
 }
 
 /*======= Create a selector for the about section to have the following styles:
   margin-top: 20px;
 */
-#about {
+section#about {
   margin-top: 20px;
 }
-#contact {
-  border-top: 1px dashed black;
+section#contact {
+  border-top: 1px dashed #2F120B;
   padding: 20px 0;
 }
 
@@ -97,7 +205,7 @@ color: #F87B99;
 /*======= Create a selector for the address tag in the contact-section class to have the following styles:
    line-height: 2;
 */
-#contact address{
+#contact address {
   line-height: 2;
   padding: 0;
   font-style: normal;
@@ -109,12 +217,12 @@ color: #F87B99;
 }
 footer {
   width: 100%;
-  background: #F87B99;
-  border-top: 1px dashed white;
+  background: #f87b99;
+  border-top: 1px dashed #e9d0c4;
 }
 
-footer .footer-content { 
-  margin: 0 auto; 
+footer .footer-content {
+  margin: 0 auto;
   /*======= create a width property. Set the value to 600px */
   width: 600px;
 }
@@ -130,23 +238,22 @@ footer nav {
 
 footer nav a {
   margin: 10px;
-  color: black;
+  color: #2F120B;
   text-decoration: underline;
 }
-
 
 footer nav a:first-child {
   margin-left: 0;
 }
-footer nav a:hover{
-  color: white;
+footer nav a:hover {
+  color: #e9d0c4;
 }
 /*======= Create a hover state for the anchor tag in the footer nav to have the following styles:
-  color: white;
+  color: #E9D0C4;
 */
 
 footer .footer-content .copyright {
   padding: 20px 0;
-   /*======= center the text here */
-   text-align: center;
+  /*======= center the text here */
+  text-align: center;
 }
