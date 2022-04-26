@@ -1,3 +1,4 @@
+/* Universal selectors... */
 * {
   box-sizing: border-box;
 }
@@ -13,9 +14,12 @@ html {
 h1 {
   font-family: "Gaegu", cursive;
   margin: 20px 0;
+  border-radius: 25px;
+  border: 1px solid #e9d0c4;
   font-size: 60px;
   text-align: center;
   color: #e9d0c4;
+  background-color: #aa8a70;
 }
 
 h2,
@@ -26,10 +30,14 @@ h6 {
   font-family: "Gaegu", cursive;
   margin-bottom: 0;
   padding: 0 10px;
-  /*=======  Update the font size to 30px */
   font-size: 30px;
+  border-radius: 20px 30px 0px 20px;
+  color: #FEF9E3;
+  background-color: #ab8a6f;
 }
+/* End of universals. */
 
+/* the section for all the sections!! */
 section {
   background: transparent;
   border-radius: 40px;
@@ -40,14 +48,6 @@ section.home {
   background: #ead0c4;
   border-left: 1px solid #BC9266;
   border-right: 1px solid #BC9266;
-}
-section header {
-  background: none;
-}
-section header h1 {
-  background-color: #aa8a70;
-  border-radius: 25px;
-  border: 1px solid #e9d0c4;
 }
 
 section header img {
@@ -63,22 +63,18 @@ section#about p{
   margin-bottom: 10%;
   color: #2F120B;
 }
-section h2 {
-  border-radius: 20px 30px 0px 20px;
-  background-color: #ab8a6f;
-}
-section.home div#cookieflavor p {
+
+section.home div#cookies p {
   border-right: 1px solid #aa8a70;
 }
-section.home h3, section.home div#celebrateblurb h2 {
+section.home h3, section.home div#celebrations h2 {
   color: #FEF9E3;
   text-align: right;
   border-radius: 30px 20px 20px 0px;
   background-color: #aa8a70;
 }
 
-section.home div#cupcakeflavor p, section.home div#celebrateblurb p {
-
+section.home div#cupcakeflavor p, section.home div#celebrations p {
   border-left: 1px solid #aa8a70;
 }
 
@@ -94,11 +90,6 @@ p {
   line-height: 1.4;
 }
 
-/*======= Create a selector for ALL images in the site to have the following styles: 
-
-  border-radius: 10px;
-
-*/
 
 img {
   border-radius: 10px;
@@ -186,9 +177,6 @@ img {
   
 }
 
-/*======= Create a selector for the about section to have the following styles:
-  margin-top: 20px;
-*/
 section#about {
   margin-top: 20px;
 }
@@ -202,9 +190,6 @@ section#contact {
   margin: 0 0 10px 0;
 }
 
-/*======= Create a selector for the address tag in the contact-section class to have the following styles:
-   line-height: 2;
-*/
 #contact address {
   line-height: 2;
   padding: 0;
@@ -248,9 +233,7 @@ footer nav a:first-child {
 footer nav a:hover {
   color: #e9d0c4;
 }
-/*======= Create a hover state for the anchor tag in the footer nav to have the following styles:
-  color: #E9D0C4;
-*/
+
 
 footer .footer-content .copyright {
   padding: 20px 0;
