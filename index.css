@@ -13,13 +13,19 @@ html {
 
 h1 {
   font-family: "Gaegu", cursive;
-  margin: 20px 0;
-  border-radius: 25px;
-  border: 1px solid #e9d0c4;
   font-size: 60px;
   text-align: center;
   color: #e9d0c4;
+  
   background-color: #aa8a70;
+  /* background: #aa8a70 url("https://img.icons8.com/color/344/brigadeiro.png") no-repeat;
+  background-position-y: top 10px;
+  background-position-x: center;
+  background-size: 100%; */
+
+  margin: 20px 0;
+  border: 2px outset #e9d0c4;
+  border-radius: 25px;
 }
 
 h2,
@@ -28,40 +34,136 @@ h4,
 h5,
 h6 {
   font-family: "Gaegu", cursive;
+  font-size: 30px;
+  color: #FEF9E3;
+
+  background-color: #ab8a6f;
+  
   margin-bottom: 0;
   padding: 0 10px;
-  font-size: 30px;
   border-radius: 20px 30px 0px 20px;
-  color: #FEF9E3;
-  background-color: #ab8a6f;
 }
-/* End of universals. */
 
-/* the section for all the sections!! */
+.container {
+  height: 485px;
+  width: 605px;
+  padding-bottom: 0px;
+  margin-top: 15%;
+  /* margin: auto; */
+
+  border: 1px #AB8A6F;
+  border-style:inset;
+  border-radius: 100% 100% 10% 10%;
+}
+
+
 section {
   background: transparent;
   border-radius: 40px;
   backdrop-filter: blur(5px);
 }
-section header img {
+/* End of universals. */
+
+              /* .container holds the entire heading section. 
+              This is where all of the styling for that is grouped. */
+
+
+          /* Section for navbar.. */
+.container nav {
+  padding-left: 2.5%;
+  margin: auto;
+}
+.container a {
+  display: inline-block;
+  width:auto;
+  padding-left: 5px;
+  padding-right:5px;
+  padding-top: 20px;
+  margin: 2%;
+
+  font-family: "Gaegu", cursive;
+  font-size: 23px;
+  font-style: bold;
+  text-decoration: none;
+  text-align: left;
+  color: #2F120B;
+  line-height: 125px;
+}
+.container a:hover {
+  color: #AC8A6F;
+}
+          /* the individuals */
+.container a.about{
+  background: transparent url("https://img.icons8.com/color/344/confectionery.png") no-repeat;
+  background-position-y: bottom 10px;
+  background-position-x: center;
+  background-size: 100%;
+
+  text-align: center;
+}
+.container a.cookies{
+  background: transparent url("https://img.icons8.com/color/344/cookies.png") no-repeat;
+  background-position-y: bottom 10px;
+  background-position-x: center;
+  background-size: 80%;
+
+  text-align: center;
+}
+.container a.celebrations{
+  background: transparent url("https://img.icons8.com/color/344/cake.png") no-repeat;
+  background-position-y: bottom 10px;
+  background-position-x: center;
+  background-size: 50%;
+
+  text-align: center;
+}
+.container a.catering{
+  background: transparent url("https://img.icons8.com/color/344/dessert.png") no-repeat;
+  background-position-y: bottom 10px;
+  background-position-x: center;
+  background-size: 70%;
+
+  text-align: center;
+}
+.container a.contact{
+  background: transparent url("https://img.icons8.com/color/344/cinnamon-roll.png") no-repeat;
+  background-position-y: bottom 10px;
+  background-position-x: center;
+  background-size: 90%;
+
+  text-align: center;
+  
+}
+          /* above there lay navbar links */
+
+       
+          
+header img {
   width: 100%;
 }
-section#about {
+
+
+          /* Home contains most of the main content of the page. */
+.home {
+  background: #ead0c4;
+  border-left: 1px solid #BC9266;
+  border-right: 1px solid #BC9266;
+  padding-bottom: 3%;
+}
+
+#about {
   color: #FEF9E3;
   text-align: center;
   border-right: 10px solid #ab8a6f;
 }
-section#about p{
+#about p{
   margin-bottom: 5%;
   color: #2F120B;
 }
 
-section.home {
-  background: #ead0c4;
-  border-left: 1px solid #BC9266;
-  border-right: 1px solid #BC9266;
+#cupcakeflavor p, #celebrations p {
+  border-left: 1px solid #aa8a70;
 }
-
 
 
 section.home div#cookies p {
@@ -72,9 +174,6 @@ section.home h3, section.home div#celebrations h2 {
   border-radius: 30px 20px 20px 0px;
 }
 
-section.home div#cupcakeflavor p, section.home div#celebrations p {
-  border-left: 1px solid #aa8a70;
-}
 
 section.home img {
   position: relative;
@@ -102,78 +201,8 @@ img {
   margin: 20px;
 }
 
-.container {
-  /*======= create a width property. Set the value to 605px */
-  margin: 0 auto;
-  width: 605px;
-}
 
-.container header nav {
-  padding-left: 2.5%;
-}
-.container header nav a {
-  /* background: transparent url("https://img.icons8.com/carbon-copy/344/confectionery.png") center no-repeat; */
-  font-family: "Gaegu", cursive;
-  width:absolute;
-  line-height: 125px;
-  /* background-color: #FFECD2; */
-  margin: 2%;
-  /* border: 1px solid lightgray; */
-  padding-left: 5px;
-  padding-right:5px;
-  padding-top: 20px;
-  border-spacing: 50px;
-  display: inline-block;
-  border-radius: 20px;
-  color: #2F120B;
-  text-decoration: none;
-  text-align: left;
-  font-size: 23px;
-  font-style: bold;
-}
-.container header nav a:hover {
-  /*======= create a background property and set it to #E9D0C4.  Then create a color property and set it's value to pink. */
-  color: #AC8A6F;
-}
-.container header nav a.about{
-  background: transparent url("https://img.icons8.com/color/344/confectionery.png") no-repeat;
-  background-position-y: bottom 10px;
-  background-position-x: center;
-  background-size: 100%;
-  text-align: center;
 
-}
-
-.container header nav a.cookies{
-  background: transparent url("https://img.icons8.com/color/344/cookies.png") no-repeat;
-  background-position-y: bottom 10px;
-  background-position-x: center;
-  background-size: 80%;
-  text-align: center;
-}
-
-.container header nav a.celebrations{
-  background: transparent url("https://img.icons8.com/color/344/cake.png") no-repeat;
-  background-position-y: bottom 10px;
-  background-position-x: center;
-  background-size: 50%;
-  text-align: center;
-}
-.container header nav a.catering{
-  background: transparent url("https://img.icons8.com/color/344/dessert.png") no-repeat;
-  background-position-y: bottom 10px;
-  background-position-x: center;
-  background-size: 70%;
-  text-align: center;
-}
-.container header nav a.contact{
-  background: transparent url("https://img.icons8.com/color/344/cinnamon-roll.png") no-repeat;
-  background-position-y: bottom 10px;
-  background-position-x: center;
-  background-size: 90%;
-  text-align: center;
-  
-}
 
 section#about {
   margin-top: 20px;
