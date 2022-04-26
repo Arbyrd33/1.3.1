@@ -43,6 +43,18 @@ section {
   border-radius: 40px;
   backdrop-filter: blur(5px);
 }
+section header img {
+  width: 100%;
+}
+section#about {
+  color: #FEF9E3;
+  text-align: center;
+  border-right: 10px solid #ab8a6f;
+}
+section#about p{
+  margin-bottom: 5%;
+  color: #2F120B;
+}
 
 section.home {
   background: #ead0c4;
@@ -50,28 +62,14 @@ section.home {
   border-right: 1px solid #BC9266;
 }
 
-section header img {
-  width: 100%;
-}
 
-section#about {
-  color: #FEF9E3;
-  text-align: center;
-  border-right: 10px solid #ab8a6f;
-}
-section#about p{
-  margin-bottom: 10%;
-  color: #2F120B;
-}
 
 section.home div#cookies p {
   border-right: 1px solid #aa8a70;
 }
 section.home h3, section.home div#celebrations h2 {
-  color: #FEF9E3;
   text-align: right;
   border-radius: 30px 20px 20px 0px;
-  background-color: #aa8a70;
 }
 
 section.home div#cupcakeflavor p, section.home div#celebrations p {
