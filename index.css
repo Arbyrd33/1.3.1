@@ -35,6 +35,7 @@ h5,
 h6 {
   font-family: "Gaegu", cursive;
   font-size: 30px;
+  text-align: center;
   color: #FEF9E3;
 
   background-color: #ab8a6f;
@@ -42,6 +43,19 @@ h6 {
   margin-bottom: 0;
   padding: 0 10px;
   border-radius: 20px 30px 0px 20px;
+}
+
+p {
+  font-size: 16px;
+  font-family: roboto;
+  padding: 10px;
+  line-height: 1.4;
+}
+
+
+img {
+  border-radius: 10%;
+  border-bottom: 1px inset #AB8A6F;
 }
 
 .container {
@@ -146,70 +160,74 @@ header img {
           /* Home contains most of the main content of the page. */
 .home {
   background: #ead0c4;
+
+  padding-bottom: 3%;
+
   border-left: 1px solid #BC9266;
   border-right: 1px solid #BC9266;
-  padding-bottom: 3%;
 }
 
+
 #about {
-  color: #FEF9E3;
+
+  margin-top: 20px;
+
   text-align: center;
+  color: #FEF9E3;
+
   border-right: 10px solid #ab8a6f;
 }
 #about p{
   margin-bottom: 5%;
+
   color: #2F120B;
 }
+
+
+/* the side by side elementation if you will */
+.content-row {
+  display: flex;
+}
+.content-row div {
+  margin: 20px;
+}
+
 
 #cupcakeflavor p, #celebrations p {
   border-left: 1px solid #aa8a70;
 }
 
-
-section.home div#cookies p {
+#cookies p {
   border-right: 1px solid #aa8a70;
 }
-section.home h3, section.home div#celebrations h2 {
-  text-align: right;
+/* I didn't want to lose the cupcakes, so I made cupcakes an h3. Good thing h2 and h3 is styled to look EXACTLY THE SAME */
+.home h3, #celebrations h2 {
   border-radius: 30px 20px 20px 0px;
 }
 
+#catering {
+  padding: 5%;
+}
+#catering h2 {
+  text-align: center;
 
-section.home img {
+  border-radius: 30px 30px 0px 0px;
+}
+
+.home img {
   position: relative;
   margin-top: 20%;
-  border-radius: 10% 10% 10% 10%;
-}
-p {
-  font-size: 16px;
-  font-family: roboto;
-  padding: 10px;
-  line-height: 1.4;
-}
-
-
-img {
-  border-radius: 10px;
-}
-
-.content-row {
-  display: flex;
-}
-
-.content-row div {
-  /*======= create a margin property.  Set the value to 20px */
-  margin: 20px;
 }
 
 
 
 
-section#about {
+
+
+#contact {
+  padding: 5%;
   margin-top: 20px;
-}
-section#contact {
-  border-top: 1px dashed #2F120B;
-  padding: 20px 0;
+  border: 1px double #ab8a6f;
 }
 
 #contact h2 {
@@ -227,12 +245,13 @@ section#contact {
   color: #3c373b;
   text-decoration: none;
 }
+
 footer {
+  margin-top: 10px;
   width: 100%;
   background: #f87b99;
   border-top: 1px dashed #e9d0c4;
 }
-
 footer .footer-content {
   margin: 0 auto;
   /*======= create a width property. Set the value to 600px */
